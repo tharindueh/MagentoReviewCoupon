@@ -1,0 +1,9 @@
+<!--@subject {{trans "Thank you for your review"}} @-->
+
+{{template config_path="design/email/header_template"}}
+<div>
+    <p>{{trans "%customer_name, Thank you for Review on %store_name." 
+            customer_name=$customerName  store_name=$store.getFrontendName()}}</p>
+    <p>{{trans "Coupon Code: %templateVar." templateVar=$templateVar}}</p>
+</div>
+{{template config_path="design/email/footer_template"}}

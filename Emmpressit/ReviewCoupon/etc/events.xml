@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="review_save_after">
+        <observer name="empressit_review_submit_after" instance="Emmpressit\ReviewCoupon\Observer\ReviewSaveAfterObserver"/>
+        <observer name="emmpressit_sduplicate_review_submission" instance="Emmpressit\ReviewCoupon\Observer\DuplicateReviewsSubmission"/>
+    </event>
+</config>
